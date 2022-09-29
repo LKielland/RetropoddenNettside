@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Spill</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="JQuery.js"></script>
+    <script src="jquery-3.6.0.min.js"></script>
+    <script src="script.js"></script>
+</head>
+<body>
+    <ul id="navbar">
+        <li><a href="episoder.html">Episoder</a></li>
+        <li><a href="spill.html">Spill</a></li>
+        <li><a href="datamaskiner.html">Datamaskiner</a></li>
+        <li style="float:right"><a class="active" href="index.html">Start</a></li>
+    </ul>
+    <h1>Spill</h1>
+    <p>Her vil du finne tekster og informasjon om spillene vi snakker om i episodene. Dette kan ansees som supplerende til podcasten, og det
+    kan hende at spill som ikke enda er omtalt i en podcast-episode kan dukke opp her.</p>
+    <div id="spillDropdown">
+        <select class='dropdown' style="width:200px" id="valgtSpill" onchange="visSpill(valgtSpill.value)">
+            <option value="" selected disabled hidden>Velg Spill</option>
+            <option value="Settlers">The Settlers</option>
+            <option value="SimCity">Sim City</option>
+            <option value="Albion">Albion</option>
+        </select>
+    </div>
+    <div id="spillet">
+        <div class="alleSpill" id="Settlers">
+            <h2>The Settlers</h2>
+            <aside id="settlersBilder">
+
+            </aside>
+
+            <p>The Settlers ble først lansert i 1993. Det er et bybyggespill av den mest meditative typen.
+                Det er ikke dermed sagt at det er blottet for konflikt, men til og med konflikten har noe beroliggende ved seg i dette spillet.
+                Her er det ingen som har det travelt. Her er det ingen som trenger helsehjelp, skolegang, eldreomsorg eller rettshjelp.
+                Dersom noen mangler noe de sårt trenger lener de seg rolig tilbake og venter tolmodig.</p>
+            <p>Når man spiller 'The Settlers' kaster man ikke bort tiden, man velsigner tiden med <strong>The Settlers</strong></p>
+        </div>
+        <div class="alleSpill" id="SimCity">
+            <h2>Sim City</h2>
+
+            <p>Sim City er et annet spill. Ikke for ded med svakt hjerte eller løs mage</p>
+            <p>Når man spiller SimCity er det som å trekke en tann. Hvis tannlegen var en bumpibjørn og tannen var en enhjørning</p>
+        </div>
+        <div class="alleSpill" id="Albion">
+            <h2>Albion</h2>
+
+            <p>Albion er verdens beste RPG-spill</p>
+            <p>Å spille Albion er ubeskrivelig</p>
+        </div>
+    </div>
+</body>
+</html>

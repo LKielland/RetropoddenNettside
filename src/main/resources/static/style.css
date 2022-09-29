@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'c64_pro_monoregular';
+    src: url('font/C64/c64_pro_mono-style.woff2') format('woff2'),
+    url('font/C64/c64_pro_mono-style.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'amiga_forever_proregular';
+    src: url('font/Amiga/amiga4ever_pro.woff2') format('woff2'),
+    url('font/Amiga/amiga4ever_pro.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Topaz New';
+    font-style: normal;
+    font-weight: normal;
+    src: local('font/finFont/Topaz New'), url('font/finFont/Topaznew.woff') format('woff');
+}
+
+* {
+    font-family: amiga_forever_proregular;
+}
+
+p {
+    font-size: 0.8rem;
+}
+div {
+    font-size: 0.8rem;
+}
+#episoden {
+    font-size: 0.7rem;
+}
+h1 {
+    font-family: "Topaz New";
+    font-size: 3rem;
+}
+
+#navbar {
+    font-family: c64_pro_monoregular;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    position: -webkit-sticky; /* Safari */
+    position: sticky;
+    top: 0;
+    border: 1px solid #e7e7e7;
+    background-color: #0088FF
+;
+}
+.active {
+    background-color: #FF7777;
+}
+
+#navbar li {
+    float: left;
+    color: #666;
+}
+#navbar li a {
+    display: block;
+    color: #FFFFFF;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+#navbar li a:hover {
+    background-color: #DD8855;
+}
+
+.dropdown {
+    font-family: c64_pro_monoregular;
+    position: relative;
+    background-color: #FF7777;
+    color: white;
+    padding: 16px;
+    font-size: 10px;
+    border: none;
+    cursor: pointer;
+}
+
+#episoden {
+    padding: 20px 0px 20px 20px;
+    width: 50%;
+}
+
+aside {
+    float: left;
+    margin: 0 1.5%;
+    width: 30%;
+}
